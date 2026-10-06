@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Form Validation Exercise</title>
+<link rel="stylesheet" href="Styles/cau9.css">
+</head>
+<body>
+<h3>Personal Information</h3>
+<form id="regForm" novalidate>
+<table>
+  <tr><td>Enter name*:</td><td><input type="text" id="name"></td></tr>
+  <tr><td>Sex*:</td><td>
+    <label><input type="radio" name="sex" value="Male"> Male</label>
+    <label><input type="radio" name="sex" value="Female"> Female</label></td></tr>
+  <tr><td>Enter email address*:</td><td><input type="text" id="email"></td></tr>
+  <tr><td>Enter birthday (MM/DD/YYYY)*:</td><td><input type="text" id="birthday"></td></tr>
+  <tr><td>Enter street address (line 1)*:</td><td><input type="text" id="street"></td></tr>
+  <tr><td>Enter city*:</td><td><input type="text" id="city"></td></tr>
+  <tr><td>Select a region*:</td><td>
+    <select id="region">
+      <option value="">-- Select --</option>
+      <option>Miền Bắc</option><option>Miền Trung</option><option>Miền Nam</option>
+    </select></td></tr>
+  <tr><td>Enter 5-digit ZIP code*:</td><td><input type="text" id="zip" maxlength="5"></td></tr>
+  <tr><td></td><td>
+    <button type="button" id="btnFinish">Finish</button>
+    <button type="button" id="btnClear">Clear</button></td></tr>
+</table>
+</form>
+<ul id="errors"></ul>
+<script src="Scripts/jquery-3.7.1.min.js"></script>
+<script>window.jQuery||document.write(unescape("%3Cscript src=%22https://code.jquery.com/jquery-3.7.1.min.js%22%3E%3C/script%3E"))</script>
+<script src="Scripts/cau9.js"></script>
+</body>
+</html>
